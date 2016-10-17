@@ -22,8 +22,12 @@ Route::get('/', function () {
  *
  * @return 
  */
-Route::group(['prefix' => 'admin'], function(){
 
+//后台登录
+Route::get("admin/login","admin\login\loginController@index");
+        
+Route::group(['prefix' => 'admin'], function(){
+        
 	// 后台主页
 	Route::get('/', 'admin\adminController@index'); 
 	

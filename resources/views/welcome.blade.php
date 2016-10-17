@@ -39,6 +39,9 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5.1</div>
+                <ul>
+                    <li><a href="{{ URL('admin/login') }}">后台登录页面</a></li>
+                </ul>
             </div>
         </div>
     </body>
